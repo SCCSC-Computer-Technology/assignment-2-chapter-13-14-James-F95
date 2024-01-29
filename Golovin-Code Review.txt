@@ -1,0 +1,2 @@
+The code is readable and the code notes are nice. However I didn't notice any error handling statements like if else stataments if the user inputs are'nt in the correct format. This would be a good thing to add and I have seen it in some others programs.
+Overall the program workd and it was easy to read, and isn't repetitive. 
