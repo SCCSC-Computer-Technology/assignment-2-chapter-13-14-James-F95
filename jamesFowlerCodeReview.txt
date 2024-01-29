@@ -1,0 +1,41 @@
+Code Compilation and Warnings:
+   - The code appears to be syntactically correct.
+   - There is no explicit mention of compiler warnings in the provided code snippet.
+
+Readability and Documentation:
+   - The code is relatively readable, and the intentions of each method are clear.
+   - There's a good use of comments to explain the purpose of each section.
+   - However, consider adding comments for complex operations or logical decisions to enhance understanding.
+
+Code Improvement:
+   - Repetitive code for creating a new `ProductDBDataContext` and binding results to the `productsDataGridView` is present in multiple methods.
+   - Consider creating a separate method to handle common operations and reduce code redundancy.
+
+Repetetive and Dead Code
+   - Repetitive code for creating a new `ProductDBDataContext` and binding results could be factored into a shared method.
+   - No apparent dead code.
+
+Software Defects and Testing:.
+   - When testing, only product number and description searches operated properly. When searching min/max price and >< units on hand, exceptions were thrown. 
+   - No apparent close or reset button for user to close or reset the application.
+   - Min/max price and >< units on hand text boxes were unclear and did not effectively aid in users undertanding of what the search.
+
+Exception Handling:
+   - The code does not handle cases where conversion from string to numeric types (`Convert.ToInt32` or 'Convert.ToDecimal' on lines 60,61 & 71,78) might fail.
+   - Consider adding appropriate exception handling for such scenarios to prevent runtime errors.
+
+Appropriateness of Framework and Code Usage:
+   - Using Windows Forms and LINQ for data querying is well-suited for the requirements of this particular assignment.
+
+Differences in Approach:
+   - The authors approach resembled that of most authors from our class for this application; a direct import of the table into the form.
+   - The authors UI was lackng conformity and order (similar to my own) but still usable.
+
+Preferred Approach:
+    - Leaning towards my own methods simply for the exceptions thrown which lead to an almost unusable program.
+
+Constructive Feedback:
+    - Consider creating a shared method for common operations to avoid redundancy and improve maintainability.
+    - Enhance comments for complex operations or logical decisions to provide more context for readers.
+    - Add exception handling for potential conversion errors when parsing user input.
+    - Overall, the code is well-structured, and improvements are more in the direction of enhancing maintainability and robustness.
